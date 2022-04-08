@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: #fcfdfd;
+  --header-bg-color: #413b40;
+  /* --grey-text-color: #a1a6b4;
+  --border-color: #e6e8ec;
+  --btn-color: #6d31ee;
+  --btn-color-light: #aa9dfa; */
+}
+@font-face {
+	font-family: 'Acrom';
+	src: local('Acrom-Regular'),
+    url('../fonts/Acrom-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Acrom';
+	src: local('Acrom-Bold'),
+    url('../fonts/Acrom-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+body {
+  font-family: 'Acrom', sans-serif;
+}
+h1, h2, p {
+  margin: 0;
+  /* color: var(--black-text-color); */
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  padding: unset;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.2s linear;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+:hover {
+  transition: background-color 0.6s ease, color 0.6s linear;
+}
+:focus {
+  outline: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header */
+.header {
+  background-color: var(--header-bg-color);
+}
+.header__logo {
+  width: 60px;
+  height: 60px;
+}
