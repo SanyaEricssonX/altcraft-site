@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AltCraft.online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="js/index.js"></script>
+</head>
+
+<body id="scroll-off">
+  <header class="header">
+    <div class="container header__container">
+      <a href="http://altcraft.online" class="header__link">
+        <img src="img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="header__logo logo">
+      </a>
+      <nav class="header__nav header-nav" id="menu">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link site_opened">Главная</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://donate.altcraft.online/rules" target="blanc" class="header-nav__link">Правила сервера</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link">Пожертвования</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://vk.com/altcraft.online" target="blanc" class="header-nav__link">Вконтакте</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://discord.gg/ZBYnycwPGQ" target="blanc" class="header-nav__link">Дискорд</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="burger" class="burger" aria-label="Открыть меню">
+        <span class="burger__selector burger__icon"></span>
+
+        <span class="burger__selector burger__icon"></span>
+
+        <span class="burger__selector burger__icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-hero">
+      <div class="container section-hero__container section-hero_bg">
+        <h1 class="section-hero__heading">
+          AltCraft.online
+        </h1>
+        <p class="section-hero__desc">
+          Уютный сервер
+        </p>
+      </div>
+    </section>
+    <section class="section-play">
+      <div class="container section-play__container">
+        <p class="section-play__heading">
+          Чтобы начать играть на нашем сервере, выполните следуюшие 3 шага:
+        </p>
+        <div class="section-play__block play-block">
+          <ul class="play-block__list">
+            <!-- Карточка 1 -->
+            <li class="play-block__item">
+              <p class="play-block__step">1</p>
+              <p class="play-block__info">Внимательно прочитайте <a href="https://donate.altcraft.online/rules"
+                  target="blanc" class="play-block__link">правила сервера</a>. Также рекомендуем посетить наш <a
+                  href="https://discord.gg/ZBYnycwPGQ" target="blanc" class="play-block__link">дискорд канал</a>.
+              </p>
+            </li>
+            <!-- Карточка 2 -->
+            <li class="play-block__item">
+              <p class="play-block__step">2</p>
+              <p class="play-block__info">
+                Для комфортной игры рекомендуем
+              </p>
+              <span class="play-block__ver">
+                1.16.5 - 1.18.1
+              </span>
+              <p class="play-block__info">
+                версии как лицензионного, так и пиратского клиента.
+              </p>
+            </li>
+            <!-- Карточка 3 -->
+            <li class="play-block__item">
+              <p class="play-block__step">3</p>
+              <p class="play-block__info">
+                Нажмите на кнопку ниже, чтобы скопировать ip сервера и вставьте в игре.
+              </p>
+              <button onclick="copyThisText()" class="play-block__btn">
+                <span class="play-block__copytext" id="textToCopy">
+                  altcraft.online
+                </span>
+                <span class="play-block__copyicon">
+                  <svg fill="#80b6b8" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"
+                    class="eva eva-copy-outline">
+                    <g data-name="Layer 2">
+                      <g data-name="copy">
+                        <rect width="24" height="24" opacity="0" />
+                        <path
+                          d="M18 21h-6a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3zm-6-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z" />
+                        <path
+                          d="M9.73 15H5.67A2.68 2.68 0 0 1 3 12.33V5.67A2.68 2.68 0 0 1 5.67 3h6.66A2.68 2.68 0 0 1 15 5.67V9.4h-2V5.67a.67.67 0 0 0-.67-.67H5.67a.67.67 0 0 0-.67.67v6.66a.67.67 0 0 0 .67.67h4.06z" />
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-glhf section-glhf_bg">
+      <div class="container section-glhf__container">
+        <p class="section-glhf__info">
+          Приятной игры и хорошего настроения!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left footer-left">
+        <a href="http://altcraft.online" class="footer-left__link">
+          <img src="img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="footer-left__logo logo">
+        </a>
+        <small class="footer-left__copyright">
+          <span>&#169</span> 2022 AltCraft.online
+        </small>
+      </div>
+      <nav class="footer__nav footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link site_opened">Главная</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="https://donate.altcraft.online/rules" target="blanc" class="footer-nav__link">Правила сервера</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">Пожертвования</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__socials footer-socials">
+        <li class="footer-socials__item">
+          <a href="https://vk.com/altcraft.online" target="blanc" class="footer-socials__link">
+            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" width="50px" height="50px">
+              <path
+                d="M48,7H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V15C56,10.582,52.418,7,48,7z M42.323,42 c-1.219-3.804-4.257-6.747-8.275-7.147V42h-0.62C22.496,42,16.26,34.492,16,22h5.477c0.18,9.169,4.217,13.053,7.415,13.854V22 h5.157v7.908c3.158-0.34,6.476-3.944,7.595-7.908h5.157c-0.859,4.885-4.457,8.488-7.016,9.97C42.343,33.171,46.441,36.314,48,42 H42.323z" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials__item">
+          <a href="https://discord.gg/ZBYnycwPGQ" target="blanc" class="footer-socials__link">
+            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50px" height="50px">
+              <path
+                d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials__item">
+          <a href="https://www.youtube.com/channel/UCDIyNdviIHXkayFe39kAp_Q" target="blanc"
+            class="footer-socials__link">
+            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" width="50px" height="50px">
+              <path
+                d="M56.456,17.442c-0.339-1.44-1.421-2.595-2.866-3.053C49.761,13.174,41.454,12,32,12s-17.761,1.174-21.591,2.389 c-1.445,0.458-2.527,1.613-2.866,3.053C6.903,20.161,6,25.203,6,32c0,6.797,0.903,11.839,1.544,14.558 c0.339,1.44,1.421,2.595,2.866,3.053C14.239,50.826,22.546,52,32,52s17.761-1.174,21.591-2.389 c1.445-0.458,2.527-1.613,2.866-3.053C57.097,43.839,58,38.797,58,32C58,25.203,57.097,20.161,56.456,17.442z M27,40V24l14.857,8 L27,40z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
