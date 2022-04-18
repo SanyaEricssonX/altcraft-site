@@ -3,8 +3,8 @@
 }
 :root {
   --main-bg-color: #fffafa;
-  --main-color-2: #413b40;
-  --main-color-3: #80b6b8;
+  --main-color-2: #312c30;
+  --main-color-3: #20B2AA;
 }
 @font-face {
 	font-family: 'Acrom';
@@ -154,10 +154,6 @@ img {
   font-size: 65px;
   font-weight: 700;
   color: var(--main-color-3);
-  text-shadow: 0.5px 0 1px #000,
-  0 0.5px 1px #000,
-  -0.5px 0 1px #000,
-  0 -0.5px 1px #000;
 }
 .section-hero__desc {
   font-size: 30px;
@@ -184,6 +180,7 @@ img {
   align-items: center;
   padding: 15px;
   max-width: 200px;
+  background-color: #fff;
   border: 2px solid var(--main-color-3);
   border-radius: 7px;
 }
@@ -197,7 +194,7 @@ img {
 }
 .play-block__info {
   text-align: center;
-  color: #fff;
+  color: var(--main-color-2);
 }
 .play-block__link {
   padding: 2px 0;
@@ -237,6 +234,7 @@ img {
 .play-block__copyicon svg {
   width: 24px;
   height: 24px;
+  fill: var(--main-color-3);
 }
 .play-block__btn:hover {
   background-color: var(--main-color-3);
@@ -252,8 +250,20 @@ img {
   padding: 50px 0;
 }
 .section-glhf_bg {
-  background: url('../img/glhf-bg.webp') center no-repeat;
-  background-size: 100%;
+  position: relative;
+  background: url('../img/glhf-bg.png') center no-repeat;
+  background-size: cover;
+}
+.section-glhf_bg::after {
+  position: absolute;
+    content: "";
+    background: #2a354f;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: 0;
 }
 .section-glhf__container {
   display: flex;
@@ -265,11 +275,10 @@ img {
   font-size: 32px;
   font-weight: 700;
   color: var(--main-color-3);
-  text-shadow: 1px 0 10px #000,
-  0 1px 10px #000,
-  -1px 0 10px #000,
-  0 1px 10px #000;
+  color: #fff;
+  z-index: 1;
 }
+
 /* footer */
 .footer {
   background-color: var(--main-color-2);
@@ -284,6 +293,9 @@ img {
 .footer-left {
   display: flex;
   align-items: center;
+}
+.footer-left__link {
+  margin-right: 10px;
 }
 .footer-left__copyright {
   font-size: 12px;
@@ -313,11 +325,14 @@ img {
   margin-right: 15px;
 }
 .footer-socials__link:hover svg {
+  transition: fill 0.3s ease, color 0.2s linear;
   fill: var(--main-color-3);
 }
 .site_opened {
   color: var(--main-color-3);
 }
+
+/* Media */
 @media (max-width: 996px) {
   .container {
     max-width: 900px;
@@ -527,6 +542,9 @@ img {
     padding: 0;
   }
   /* footer */
+  .footer-left__copyright {
+    max-width: 70px;
+  }
   .footer-socials__link svg {
     width: 35px;
     height: 35px;
