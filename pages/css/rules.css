@@ -1,0 +1,39 @@
+:root {
+  --main-bg-color: #fffafa;
+  --main-color-2: #312c30;
+  --main-color-3: #20b2aa;
+}
+/* rules */
+.section-rules__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color-2);
+}
+.section-rules__heading {
+  margin-bottom: 50px;
+}
+.section-rules__content {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.section-rules__content h3:not(:nth-child(1)) {
+  margin-top: 50px;
+}
+.section-rules__content p{
+  margin: 15px 0;
+  padding-left: 30px;
+}
+.section-rules__content a {
+  padding: 1px;
+  max-width: 90%;
+  border-radius: 2px;
+  color: var(--main-color-3);
+}
+.section-rules__content a:hover {
+  background-color: var(--main-color-3);
+  color: #fff;
+}
+.section-rules__content li {
+  margin-left: 30px;
+}

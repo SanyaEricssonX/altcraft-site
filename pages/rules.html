@@ -4,31 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AltCraft.online</title>
+  <title>Правила сервера</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/rules.css">
 
-  <script defer src="js/index.js"></script>
+  <script defer src="js/marked.min.js"></script>
+  <script defer src="../js/index.js"></script>
 </head>
 
 <body id="scroll-off">
   <header class="header">
     <div class="container header__container">
       <a href="http://altcraft.online" class="header__link">
-        <img src="img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="header__logo logo">
+        <img src="../img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="header__logo logo">
       </a>
       <nav class="header__nav header-nav" id="menu">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a href="" class="header-nav__link site_opened">Главная</a>
+            <a href="../index.html" class="header-nav__link">Главная</a>
           </li>
           <li class="header-nav__item">
-            <a href="pages/rules.html" class="header-nav__link">Правила сервера</a>
+            <a href="" class="header-nav__link site_opened">Правила сервера</a>
           </li>
           <li class="header-nav__item">
-            <a href="pages/donate.html" class="header-nav__link">Донат</a>
+            <a href="donate.html" class="header-nav__link">Донат</a>
           </li>
           <li class="header-nav__item">
             <a href="https://vk.com/altcraft.online" target="blanc" class="header-nav__link">Вконтакте</a>
@@ -49,79 +51,16 @@
   </header>
 
   <main class="main">
-    <section class="section-hero">
-      <div class="container section-hero__container section-hero_bg">
-        <h1 class="section-hero__heading">
-          AltCraft.online
-        </h1>
-        <p class="section-hero__desc">
-          Уютный сервер
-        </p>
-      </div>
-    </section>
-    <section class="section-play">
-      <div class="container section-play__container">
-        <p class="section-play__heading">
-          Чтобы начать играть на нашем сервере, выполните следуюшие 3 шага:
-        </p>
-        <div class="section-play__block play-block">
-          <ul class="play-block__list">
-            <!-- Карточка 1 -->
-            <li class="play-block__item">
-              <p class="play-block__step">1</p>
-              <p class="play-block__info">Внимательно прочитайте <a href="pages/rules.html"
-                  class="play-block__link">правила сервера</a>. Также рекомендуем посетить наш <a
-                  href="https://discord.gg/ZBYnycwPGQ" target="blanc" class="play-block__link">дискорд</a>.
-              </p>
-            </li>
-            <!-- Карточка 2 -->
-            <li class="play-block__item">
-              <p class="play-block__step">2</p>
-              <p class="play-block__info">
-                Для комфортной игры рекомендуем
-              </p>
-              <span class="play-block__ver">
-                1.16.5 - 1.18.1
-              </span>
-              <p class="play-block__info">
-                версии как лицензионного, так и пиратского клиента.
-              </p>
-            </li>
-            <!-- Карточка 3 -->
-            <li class="play-block__item">
-              <p class="play-block__step">3</p>
-              <p class="play-block__info">
-                Нажмите на кнопку ниже, чтобы скопировать ip сервера и вставьте в игре.
-              </p>
-              <button onclick="copyThisText()" class="play-block__btn">
-                <span class="play-block__copytext">
-                  altcraft.online
-                </span>
-                <span class="play-block__copyicon">
-                  <svg fill="#80b6b8" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"
-                    class="eva eva-copy-outline">
-                    <g data-name="Layer 2">
-                      <g data-name="copy">
-                        <rect width="24" height="24" opacity="0" />
-                        <path
-                          d="M18 21h-6a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3zm-6-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z" />
-                        <path
-                          d="M9.73 15H5.67A2.68 2.68 0 0 1 3 12.33V5.67A2.68 2.68 0 0 1 5.67 3h6.66A2.68 2.68 0 0 1 15 5.67V9.4h-2V5.67a.67.67 0 0 0-.67-.67H5.67a.67.67 0 0 0-.67.67v6.66a.67.67 0 0 0 .67.67h4.06z" />
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </li>
-          </ul>
+    <!-- <section class="section-top">
+
+    </section> -->
+    <section class="section-rules">
+      <div class="container section-rules__container">
+        <h2 class="section-rules__heading">
+          Правила сервера AltCraft.online
+        </h2>
+        <div class="section-rules__content" id="content">
         </div>
-      </div>
-    </section>
-    <section class="section-glhf section-glhf_bg section-glhf_dark">
-      <div class="container section-glhf__container">
-        <p class="section-glhf__info">
-          Приятной игры и хорошего настроения!
-        </p>
       </div>
     </section>
   </main>
@@ -130,7 +69,7 @@
     <div class="container footer__container">
       <div class="footer__left footer-left">
         <a href="http://altcraft.online" class="footer-left__link">
-          <img src="img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="footer-left__logo logo">
+          <img src="../img/altcraft-logo.svg" alt="Логотип проекта AltCraft.online" class="footer-left__logo logo">
         </a>
         <small class="footer-left__copyright">
           <span>&#169</span> 2021-2022 AltCraft.online
@@ -139,13 +78,13 @@
       <nav class="footer__nav footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link site_opened">Главная</a>
+            <a href="../index.html" class="footer-nav__link">Главная</a>
           </li>
           <li class="footer-nav__item">
-            <a href="pages/rules.html" target="blanc" class="footer-nav__link">Правила сервера</a>
+            <a href="" class="footer-nav__link site_opened">Правила сервера</a>
           </li>
           <li class="footer-nav__item">
-            <a href="pages/donate.html" class="footer-nav__link">Донат</a>
+            <a href="donate.html" class="footer-nav__link">Донат</a>
           </li>
         </ul>
       </nav>
